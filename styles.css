@@ -33,9 +33,63 @@
     font-size: 1.5em;
     font-weight: 600;
     margin: 10px 0;
+    text-transform: uppercase;
 }
 .text p{
     font-size: 1em;
     font-weight: 500;
     margin: 10px 0;
+    text-transform: uppercase;
+}
+
+
+.flex.avenir{
+    flex-direction: column-reverse;
+}
+
+
+
+/*  style button link website */
+
+.link_website{
+    
+}
+
+.button_website_persiennerie{
+    padding: 10px;
+    
+    border-radius: 30px;
+    background: none;
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 1.2em;
+    position: relative;
+    overflow: hidden;
+    transition: 1s ease;
+    color: #fff;
+    background-color: #4c5743;
+    border: 2px solid #333b2c;
+}
+.link_website:hover .button_website_persiennerie{
+    color: #000;
+    background-color: #fff;
+}
+
+.button_website_avenir{
+    padding: 10px;
+    border-radius: 30px;
+    background: none;
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 1.2em;
+    position: relative;
+    overflow: hidden;
+    transition: 1s ease;
+    color: #fff;
+    background-color: #8d8368;
+    border: 2px solid #544a43
+}
+.link_website:hover .button_website_avenir{
+    color: #000;
+    background-color: #fff;
 }

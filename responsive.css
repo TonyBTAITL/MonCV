@@ -11,6 +11,13 @@
     .container .container_mockup .light{
         background-image: url(img/light.png);
     }
+    .container .container_mockup .mockup_2{
+        background-image: url(img/avenir-mockup.png);
+    }
+    
+    .container .container_mockup .page_web_2{
+        background-image: url(img/avenir-mockup_web.png);
+    }
 }
 /* smartphone */
 @media screen and (min-width: 900px){
@@ -24,6 +31,13 @@
     .container_mockup .light{
         background-image: url(img/light_tablet.png);
     }
+    .container_mockup .mockup_2{
+        background-image: url(img/avenir-mockup_tablet.png);
+    }
+    
+    .container_mockup .page_web_2{
+        background-image: url(img/avenir-mockup_tablet_web.png);
+    }
 }
 
 
@@ -31,7 +45,7 @@
     .container_mockup img{
         display: none;
     }
-    .flex{
+    .flex, .flex.avenir{
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -83,6 +97,8 @@
         background-size: cover;
         background-position: left;
         position: relative;
+        filter: brightness(0.9);
+        transition: 1s;
     }
     
     .page_web{
@@ -122,18 +138,24 @@
     }
     .container_mockup:hover .light{
         opacity: 1;
-        transition: 0.5s;
+        transition: 1s;
+    }
+    .container_mockup:hover .mockup{
+        filter: brightness(1);
+        transition: 1s;
     }
     /* Mockup création 2 */
     .mockup_2{
         width: 100%;
         max-height: 919px;
         height: 100vh;
-        background-image: url(img/fontanier-mockup.png);
+        background-image: url(img/avenir-mockup_smartphone.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom;
+        background-position: left;
         position: relative;
+        filter: brightness(0.7);
+        transition: 1s;
     }
     
     .page_web_2{
@@ -144,10 +166,10 @@
         top: 0;
         right: 0;
         z-index: -1;
-        background-image: url(img/persienneriedranceenne-mockup_web.png);
+        background-image: url(img/avenir-mockup_smartphone_web.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: bottom;
+        background-position: left;
         transition: 3s;
     }
     /* Effet au survole de mockup 2*/
@@ -155,5 +177,10 @@
     .container_mockup:hover .page_web_2{
         background-position-y: -100px;
         transition: all 3s;
+        
+    }
+    .container_mockup:hover .mockup_2{
+        filter: brightness(1);
+        transition: 1s;
     }
 }
