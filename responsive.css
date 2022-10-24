@@ -42,6 +42,18 @@
 
 
 @media screen and (min-width: 767px){
+    .first_section{
+        height: 100vh;
+    }
+    h1{
+        font-size: 4em;
+    }
+    .infos br{
+        display: none;
+    }
+    .infos p{
+        font-size: 2em;
+    }
     .container_mockup img{
         display: none;
     }

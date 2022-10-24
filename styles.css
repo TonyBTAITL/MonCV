@@ -8,7 +8,6 @@
 .container{
     max-width: 1920px;
     margin: auto;
-    box-shadow: 0px 0px 1px black;
 }
 .flex{
     display: flex;
@@ -51,10 +50,6 @@
 
 /*  style button link website */
 
-.link_website{
-    
-}
-
 .button_website_persiennerie{
     padding: 10px;
     
@@ -68,7 +63,7 @@
     transition: 1s ease;
     color: #fff;
     background-color: #4c5743;
-    border: 2px solid #333b2c;
+    border: 1px solid #333b2c;
 }
 .link_website:hover .button_website_persiennerie{
     color: #000;
@@ -87,9 +82,103 @@
     transition: 1s ease;
     color: #fff;
     background-color: #8d8368;
-    border: 2px solid #544a43
+    border: 1px solid #544a43
 }
 .link_website:hover .button_website_avenir{
     color: #000;
     background-color: #fff;
+}
+
+/* Navigation */
+header{
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+    width: 100%;
+    /* display: none; */
+}
+.navigation{
+    max-width: 1920px;
+    margin: auto;
+    
+}
+nav{
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    padding: 10px 0px;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type:none;
+    height: 100px;
+}
+nav ul li{
+    padding: 33px;
+    width: 113px;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+.logo img{
+    width: 70px;
+}
+/* first section */
+h1{
+    text-transform: uppercase;
+    color: #333;
+    margin: 20px 0;
+}
+.first_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infos{
+    text-align: center;
+}
+.infos p{
+    color: #666;
+    margin: 20px 0;
+}
+.infos .button_header{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.button_header a:nth-child(1) button{
+    padding: 5px;
+    border-radius: 30px;
+    background: none;
+    cursor: pointer;
+    font-size: 1em;
+    position: relative;
+    overflow: hidden;
+    transition: 1s ease;
+    color: #333;
+    background-color: #fff;
+    border: 1.5px solid #544a43;
+    width: 250px;
+    margin: 5px 5px;
+}
+.button_header a:nth-child(2) button{
+    padding: 5px;
+    border-radius: 30px;
+    background: none;
+    cursor: pointer;
+    font-size: 1em;
+    position: relative;
+    overflow: hidden;
+    transition: 1s ease;
+    color: #fff;
+    background-color: #69775c;
+    border: 1.5px solid #544a43;
+    width: 250px;
+    margin: 5px 5px;
 }
