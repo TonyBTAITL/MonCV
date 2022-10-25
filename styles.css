@@ -100,7 +100,6 @@ header{
 .navigation{
     max-width: 1920px;
     margin: auto;
-    
 }
 nav{
     width: 100%;
@@ -127,6 +126,7 @@ nav ul li a{
 }
 .logo img{
     width: 70px;
+    filter: hue-rotate(81deg);
 }
 /* first section */
 h1{
@@ -181,4 +181,29 @@ h1{
     border: 1.5px solid #544a43;
     width: 250px;
     margin: 5px 5px;
+}
+
+.description{
+    display: flex;
+    justify-content: center;   
+    flex-direction: column;
+}
+
+.description .text h2{
+    font-size: 1.5em;
+}
+.description .text p{
+    font-size: 1em;
+    text-transform: none;
+    color: #666;
+}
+.first-text, .second-text{
+    margin: 20px 0;
+}
+.profilepicture{
+    text-align: center;
+}
+.profilepicture img{
+    filter: hue-rotate(81deg);
+    width: 200px;
 }

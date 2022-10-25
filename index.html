@@ -12,16 +12,16 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="navigation">
+        <div class="navigation" id="navigation">
             <nav>
                 <ul>
-                    <li><a href="">A propos</a></li>
-                    <li><a href="">Portfolio</a></li>
+                    <li class="item-nav"><a href="">A propos</a></li>
+                    <li class="item-nav"><a href="">Portfolio</a></li>
                     <div class="logo">
-                        <img src="img/logo.png" alt="">
+                        <img src="img/logo.png" alt="" id="logo">
                     </div>
-                    <li><a href="">Compétences</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li class="item-nav"><a href="">Compétences</a></li>
+                    <li class="item-nav"><a href="">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,8 +38,33 @@
                 </div>
             </div>
         </div>
-        <!-- Image creative section -->
+        <div class="description">
+            <div class="left">
+                <div class="profilepicture">
+                    <img src="img/photo.png" alt="Photo de profile de la description">
+                </div>
+            </div>
+            <div class="right">
+                <div class="text">
+                    <div class="first-text">
+                        <h2>Portrait</h2>
+                        <p>
+                            Jeune âgé de 25 ans, passionné par l'informatique depuis des années,
+                            je recherche un travail dans lequel je puisse améliorer ou confirmer
+                            mes compétences en développement web (Front - End).
+                        </p>
+                    </div>
+                    <div class="second-text">
+                        <h2>Languages</h2>
+                        <p>HTML, CSS, Javascript, PHP, Wordpress, REACT</p>
+                    </div>
+                    
+                    
 
+                </div>
+            </div>
+        </div>
+        <!-- Image creative section -->
         <div class="container flex">
             <div class="container_mockup mockup_effect">
                 <!-- format smartphone -->
@@ -61,7 +86,7 @@
                     <p>html - css - javascript - php</p>
                     <a href="" class="link_website">
                         <button class="button_website_persiennerie">
-                            Avenir Informatique
+                            La Persiennerie Dranceenne
                         </button>
                     </a>
                 </div>
@@ -98,4 +123,5 @@
 
     </footer>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>

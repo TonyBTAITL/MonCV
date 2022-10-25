@@ -42,6 +42,23 @@
 
 
 @media screen and (min-width: 767px){
+    .description .text h2{
+        font-size: 2em;
+    }
+    .description .text p{
+        font-size: 1.3em;
+        text-transform: none;
+        color: #666;
+    }
+    .profilepicture img{
+        filter: hue-rotate(81deg);
+        width: 300px;
+    }
+    .description{
+        display: flex;
+        justify-content: center;   
+        flex-direction: row;
+    }
     .first_section{
         height: 100vh;
     }
